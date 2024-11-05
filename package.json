@@ -1,10 +1,10 @@
 {
   "name": "twitterscrapping",
   "version": "1.0.0",
-  "description": "In this project i'll make an application that get specific users twittes while doing a sentiment analysis.\r For this i need to check a few things:",
+  "description": "In this project i'll make an application that get specific users twittes while doing a sentiment analysis.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node src/main.js"
   },
   "author": "",
   "license": "ISC",
