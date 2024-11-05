@@ -21,3 +21,4 @@ You see, to do this we have not only to analyse the specific company's results b
 ## Webscraping
 
 For this i'll use Puppeteer to extract information, i'll also probably use puppeteer-extra-plugin-stealth for not looking like a bot. To test the stealth package i'll use the website "https://bot.sannysoft.com" that shows if the access have a "bot behavior".<br />
+website with important documentation: https://github.com/puppeteer/puppeteer/pull/11782<br />
