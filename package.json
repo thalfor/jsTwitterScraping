@@ -1,0 +1,19 @@
+{
+  "name": "twitterscrapping",
+  "version": "1.0.0",
+  "description": "In this project i'll make an application that get specific users twittes while doing a sentiment analysis.\r For this i need to check a few things:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "fastify": "^5.1.0",
+    "puppeteer": "^23.7.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "zod": "^3.23.8"
+  }
+}
