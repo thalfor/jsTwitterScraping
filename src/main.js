@@ -29,7 +29,7 @@ const loginX = async () => {
   await page.goto(urlScrap, { waitUntil: 'networkidle2' })
   await setTimeout(3000);
 
-  //$x(`//div[@data-testid="tweetText"][0].childNodes[1].childNodes[0].wholeText`)
+  //$x(`//div[@data-testid="tweetText"]`)[0].childNodes[1].childNodes[0].wholeText
   const [tweetData] = await page.$$(`xpath/.//div[@data-testid='tweetText']`);
   console.log([tweetData]);
   /*
