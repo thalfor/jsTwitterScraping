@@ -19,17 +19,13 @@ const loginX = async () => {
   await page.goto(url);
   await setTimeout(3000);
 
+
   const pageUsernamePage = await usernameLogin(page);
   const pageCheckUserLogin = await checkUserLogin(pageUsernamePage);
   await passwordLogin(pageCheckUserLogin);
 
-  async function navigateToPage (pageDestination, urlDestination) {
-    await pageDestination.goto(urlDestination, { waitUntil: 'networkidle2' });
-    await setTimeout(3000);
-  }
 
   let urlScrap = 'https://x.com/markets'
-  //await navigateToPage(page, urlScrap);
   await page.goto(urlScrap, { waitUntil: 'networkidle2' })
   await setTimeout(3000);
 
