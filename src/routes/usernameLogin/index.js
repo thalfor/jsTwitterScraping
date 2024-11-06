@@ -12,12 +12,14 @@ async function usernameLogin(page) {
   await page.waitForSelector(`xpath/.//input[@name='text']`); 
   const [inputLoginField] = await page.$$(`xpath/.//input[@name='text']`);
   await inputLoginField.type(env.USERNAMELOGIN);
-  //await page.screenshot({ path: 'src/routes/usernameLogin/usernameFilled.jpg' });
   await page.keyboard.press('Enter');
   await setTimeout(2000);
-
-  //return page; ?
+  
+  return page;
 };
 
 module.exports.usernameLogin = usernameLogin;
 //
+//
+//
+//await page.screenshot({ path: 'src/routes/usernameLogin/usernameFilled.jpg' });

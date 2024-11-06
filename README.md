@@ -3,7 +3,8 @@
 In this project i'll make an application that get specific users twittes while doing a sentiment analysis.
 For this i need to check a few things:
 
-[ ] - Create a webscraping to recieve the data using or not existing libraries.<br />
+[x] - Create a webscraping to recieve the data using or not existing libraries.<br />
+[ ] - Create a webscraping to recieve twittes.<br />
 [ ] - Put the webscraping into a Stream.<br />
 [ ] - Execute Python codes in JavaScript.<br />
 [ ] - Execute Python sentiment analysis on the example database aquired at the steps above.<br />
