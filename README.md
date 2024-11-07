@@ -4,9 +4,10 @@ In this project i'll make an application that get specific users twittes while d
 For this i need to check a few things:
 
 [x] - Create a webscraping to recieve the data using or not existing libraries.<br />
-[ ] - Create a webscraping to recieve twittes.<br />
+[ ] - Create a webscraping to recieve twittes.(currently having some difficulties with extracting the text from tweets)<br />
 [ ] - Put the webscraping into a Stream.<br />
-[ ] - Execute Python codes in JavaScript.<br />
+[x] - Execute Python codes in JavaScript.<br />
+[ ] - Create the Python sentiment analysis code.<br />
 [ ] - Execute Python sentiment analysis on the example database aquired at the steps above.<br />
 [ ] - Put the sentiment analysis into the Stream created.
 
