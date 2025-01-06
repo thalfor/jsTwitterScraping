@@ -9,6 +9,7 @@ puppeteer.use(StealthPlugin());
 
 async function passwordLogin(page) {
 
+  console.log(`Now at password`);
   await page.waitForSelector(`xpath/.//input[@name='password']`); 
   const [inputPasswordField] = await page.$$(`xpath/.//input[@name='password']`);
   await inputPasswordField.type(env.PASSWORD);

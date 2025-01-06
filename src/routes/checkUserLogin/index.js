@@ -8,13 +8,14 @@ puppeteer.use(StealthPlugin());
 
 
 async function checkUserLogin(page) {
-  
+
+  console.log(`Now at checkingUser`);
   const checkingWhereAmI = await page.$$(`xpath/.//span[text()='Enter your phone number or username']`); 
   
   if(checkingWhereAmI.length > 0){
     await page.waitForSelector(`xpath/.//input[@name='text']`); 
     const [inputUserField] = await page.$$(`xpath/.//input[@name='text']`);
-    await inputUserField.type(env.USER);
+    await inputUserField.type(env.USERNAME);
     await page.keyboard.press('Enter');
     await setTimeout(2000);
     

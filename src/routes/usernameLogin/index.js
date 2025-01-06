@@ -9,6 +9,7 @@ puppeteer.use(StealthPlugin());
 
 async function usernameLogin(page) {
 
+  console.log(`Now at login`);
   await page.waitForSelector(`xpath/.//input[@name='text']`); 
   const [inputLoginField] = await page.$$(`xpath/.//input[@name='text']`);
   await inputLoginField.type(env.USERNAMELOGIN);
