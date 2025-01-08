@@ -25,7 +25,7 @@ const loginX = async () => {
   await passwordLogin(pageCheckUserLogin);
   
   //getting data process
-  const maxTweets = 5;
+  const maxTweets = 1000;
   let urlScrap = ['https://x.com/markets']
   for (elementUrlScrap of urlScrap) {
     await page.goto(elementUrlScrap, { waitUntil: 'networkidle2' })
