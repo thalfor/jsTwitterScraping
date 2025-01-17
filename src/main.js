@@ -3,7 +3,7 @@ const puppeteer = require('puppeteer-extra');
 const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 const { setTimeout } = require('node:timers/promises');
 
-const { usernameLogin } = require('./routes/usernameLogin');
+const { emailLogin } = require('./routes/usernameLogin');
 const { checkUserLogin } = require('./routes/checkUserLogin');
 const { passwordLogin } = require('./routes/passwordLogin');
 const { GettingData } = require('./routes/gettingData');
@@ -20,7 +20,7 @@ const loginX = async () => {
   await setTimeout(4000);
   
   //login process
-  const pageUsernamePage = await usernameLogin(page);
+  const pageUsernamePage = await emailLogin(page);
   const pageCheckUserLogin = await checkUserLogin(pageUsernamePage);
   await passwordLogin(pageCheckUserLogin);
   
