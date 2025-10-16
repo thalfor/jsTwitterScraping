@@ -1,5 +1,6 @@
 # twitter (a.k.a. X) scraping
 
+Opa, ta vendo funcionou!  
 In this project i'll make an application that get specific users twittes while doing a sentiment analysis.
 For this i need to check a few things:
 
